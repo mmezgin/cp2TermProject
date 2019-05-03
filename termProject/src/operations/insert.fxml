@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="577.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operations.InsertController">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="ID:" AnchorPane.rightAnchor="216.0" />
+      <Label layoutX="28.0" layoutY="44.0" text="Name:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="54.0" />
+      <TextField fx:id="textFieldName" layoutX="85.0" layoutY="49.0" promptText="Name" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="49.0" />
+      <Label layoutX="28.0" layoutY="89.0" text="Surname:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="94.0" />
+      <TextField fx:id="textFieldSurname" layoutX="84.0" layoutY="94.0" promptText="Surname" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
+      <TextField fx:id="textFieldID" layoutX="84.0" layoutY="10.0" promptText="ID" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="135.0" text="E-mail:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="132.0" />
+      <TextField fx:id="textFieldEmail" layoutX="84.0" layoutY="131.0" promptText="E-mail" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="128.0" />
+      <Label layoutX="24.0" layoutY="163.0" text="Salary:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="171.0" />
+      <TextField fx:id="textFieldSalary" layoutX="84.0" layoutY="168.0" promptText="e.g. 12500" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="620.0" layoutY="209.0" text="Country:" AnchorPane.rightAnchor="216.0" />
+      <ComboBox fx:id="comboBoxCountry" layoutX="165.0" layoutY="205.0" prefWidth="150.0" promptText="Select" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="textFieldCity" layoutX="64.0" layoutY="242.0" promptText="City" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="246.0" text="City:" AnchorPane.rightAnchor="216.0" />
+      <Label layoutX="33.0" layoutY="274.0" text="Nationality:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="282.0" />
+      <TextField fx:id="textFieldNationality" layoutX="76.0" layoutY="279.0" promptText="Nationality" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="8.0" layoutY="314.0" text="Hired:" AnchorPane.rightAnchor="216.0" />
+      <TextField fx:id="textFieldHired" layoutX="76.0" layoutY="310.0" promptText="In year(s) e.g. 2" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="textFieldOffdays" layoutX="76.0" layoutY="346.0" promptText="Remaining Off Days" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="39.0" layoutY="350.0" text="Off Days:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="350.0" />
+      <TextField fx:id="textFieldDomain" layoutX="76.0" layoutY="381.0" promptText="Position" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="23.0" layoutY="385.0" text="Domain:" AnchorPane.rightAnchor="216.0" />
+      <TextField fx:id="textFieldUsername" layoutX="76.0" layoutY="417.0" promptText="Username" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="29.0" layoutY="421.0" text="Username:" AnchorPane.rightAnchor="216.0" />
+      <Label layoutX="16.0" layoutY="455.0" text="Password:" AnchorPane.rightAnchor="216.0" />
+      <Label layoutX="16.0" layoutY="483.0" text="Privilage:" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="492.0" />
+      <ComboBox fx:id="comboBoxPrivilage" layoutX="75.0" layoutY="488.0" prefWidth="150.0" promptText="Select" AnchorPane.rightAnchor="10.0" />
+      <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="451.0" promptText="Password" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="451.0" />
+      <Button fx:id="saveButton" layoutX="87.0" layoutY="536.0" mnemonicParsing="false" onAction="#saveData" prefHeight="26.0" prefWidth="82.0" text="Insert Data" />
+      <Button fx:id="menuButton" layoutX="240.0" layoutY="536.0" mnemonicParsing="false" onAction="#goBack" text="Menu" AnchorPane.topAnchor="536.0" />
+   </children>
+</AnchorPane>

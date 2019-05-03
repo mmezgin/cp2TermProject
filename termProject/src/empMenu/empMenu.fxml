@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="empMenu.EmpMenuController">
+    <children>
+        <TableView fx:id="empDataTableView" layoutX="4.0" layoutY="14.0" prefHeight="334.0" prefWidth="842.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+            <columns>
+                <TableColumn fx:id="columnID" editable="false" prefWidth="53.599977016448975" text="empID" />
+                <TableColumn fx:id="columnName" editable="false" prefWidth="46.4000244140625" text="Name" />
+                <TableColumn fx:id="columnSurname" editable="false" prefWidth="69.60003662109375" text="Surname" />
+                <TableColumn fx:id="columnEmail" editable="false" prefWidth="133.59996032714844" text="E-mail" />
+                <TableColumn fx:id="columnSalary" editable="false" prefWidth="62.39990234375" text="Salary" />
+                <TableColumn fx:id="columnCountry" editable="false" prefWidth="77.60009765625" text="Country" />
+                <TableColumn fx:id="columnCity" editable="false" prefWidth="59.20001220703125" text="City" />
+                <TableColumn fx:id="columnNationality" editable="false" prefWidth="67.99993896484375" text="Nationality" />
+                <TableColumn fx:id="columnHired" editable="false" prefWidth="75.20001220703125" text="Hired Since" />
+                <TableColumn fx:id="columnOffdays" editable="false" prefWidth="60.800048828125" text="Off Days" />
+                <TableColumn fx:id="columnDomain" editable="false" prefWidth="80.7999267578125" text="Domain" />
+                <TableColumn fx:id="columnUsername" editable="false" prefWidth="83.199951171875" text="Username" />
+                <TableColumn fx:id="columnPrivilage" editable="false" prefWidth="74.400146484375" text="Privilage" />
+            </columns>
+        </TableView>
+        <Button fx:id="loadData" layoutX="431.0" layoutY="352.0" mnemonicParsing="false" onAction="#loadData" text="Load Data" />
+      <Button fx:id="btRequest" layoutX="323.0" layoutY="388.0" mnemonicParsing="false" onAction="#requestOffDays" text="Request Off Days" />
+      <Button fx:id="btChange" layoutX="502.0" layoutY="388.0" mnemonicParsing="false" onAction="#changePassword" text="Change Password" />
+    </children>
+</AnchorPane>
